@@ -1,18 +1,15 @@
 import Head from 'next/head'
+import Navbar from '../components/nav'
+import Footer from '../components/footer'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Robert Harrison</title>
-      </Head>
+    <div class="h-screen bg-primary">
+      <Navbar />
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-
-      </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-      </footer>
+      <footer />
     </div>
+
+
   )
 }
