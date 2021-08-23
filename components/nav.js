@@ -30,7 +30,7 @@ export default function Header() {
         contact = 'border-b-2'
     }
     return (
-        <div className="relative min-h-screen md:flex">
+        <div className="relative min-h-auto md:flex">
 
             <div className="text-black space-y-2 px-2 md:hidden flex justify-end">
                 <button className="mobile-menu-button p4">
@@ -40,24 +40,28 @@ export default function Header() {
                 </button >
             </div >
 
-            <div className="mobile-sidebar bg-black text-white w-32 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:hidden transition duration-200 ease-in-out">
+            <div className=" bg-white border-r border-black mobile-sidebar text-black w-20 space-y-1 py-1 px-1 absolute inset-y-0 left-0 transform -translate-x-full md:hidden transition duration-200 ease-in-out">
                 <nav>
-                    <a href="/" className='block px-4 py-4'>Home</a>
-                    <a href="/about" className='block px-4 py-4'>About</a>
-                    <a href="/contact" className='block px-4 py-4'>Contact</a>
-                    <a href="/other" className='block px-4 py-4'>Other</a>
+                    <a href="/" className='border-b border- px-1 py-1'>Home</a>
+                    <a href="/about" className='border-b  block px-1 py-1'>About</a>
+                    <a href="/contact" className='border-b  block px-1 py-1'>Contact</a>
+                    <a href="/other" className='border-b  block px-1 py-1'>Other</a>
                 </nav>
             </div>
 
 
-
-
-
-
-            <div class="flex-1 p-10 text-2xl font-bold">
-                content
-            </div>
-
+            <nav className="mainNav flex justify-center w-screen h-auto text-5xl hidden md:block">
+                <div className="py-2.5 w-11/12 flex justify-center">
+                    <div className=" h-auto font-sans flex justify-justify-start">
+                        <a href="/" className={'border-black px-4 ' + home}>Home</a>
+                    </div>
+                    <div className="md:font-body h-auto font-sans flex justify-end w-10/12">
+                        <a href="/about" className={'border-black px-4 ' + about}>About</a>
+                        <a href="/contact" className={'border-black px-4 ' + contact}>Contact</a>
+                        <a href="/other" className={'border-black px-4 ' + other}>Other</a>
+                    </div>
+                </div>
+            </nav>
         </div >
     )
 }
