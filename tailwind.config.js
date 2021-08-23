@@ -1,3 +1,4 @@
+const colors = require('tailwindcss/colors')
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
@@ -18,8 +19,14 @@ module.exports = {
       'sans': ['ui-sans-serif', 'system-ui',],
       'serif': ['ui-serif', 'Georgia',],
       'mono': ['ui-monospace', 'SFMono-Regular',],
-    }
+    },
+    colors: {
+      gray: colors.trueGray,
+      black: colors.black,
+      white: colors.white
+    },
   },
+
   variants: {
     extend: {},
   },

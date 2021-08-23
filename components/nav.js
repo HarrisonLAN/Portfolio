@@ -1,7 +1,17 @@
 import { useRouter } from 'next/router'
+import React, { useEffect } from "react";
+import Image from 'next/image'
 export default function Header() {
+
     const router = useRouter()
     //BAD CODE FOR DYNAMIC BORDER
+    useEffect(() => {
+        const btn = document.querySelector('.mobile-menu-button')
+        const sidebar = document.querySelector('.mobile-sidebar')
+        btn.addEventListener('click', () => {
+            sidebar.classList.toggle('-translate-x-full');
+        });
+    }, [])
     var home;
     var about;
     var contact;
@@ -20,20 +30,34 @@ export default function Header() {
         contact = 'border-b-2'
     }
     return (
+        <div className="relative min-h-screen md:flex">
 
-        <header>
-            <nav className=" flex justify-center w-screen h-auto text-5xl">
-                <div className="py-2.5 w-11/12 flex justify-center">
-                    <div className="md:font-body h-auto font-sans flex justify-justify-start">
-                        <a href="/" className={'border-black px-4 ' + home}>Home</a>
-                    </div>
-                    <div className="md:font-body h-auto font-sans flex justify-end w-10/12">
-                        <a href="/about" className={'border-black px-4 ' + about}>About</a>
-                        <a href="/contact" className={'border-black px-4 ' + contact}>Contact</a>
-                        <a href="/other" className={'border-black px-4 ' + other}>Other</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
+            <div className="text-black space-y-2 px-2 md:hidden flex justify-end">
+                <button className="mobile-menu-button p4">
+                    <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button >
+            </div >
+
+            <div className="mobile-sidebar bg-black text-white w-32 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:hidden transition duration-200 ease-in-out">
+                <nav>
+                    <a href="/" className='block px-4 py-4'>Home</a>
+                    <a href="/about" className='block px-4 py-4'>About</a>
+                    <a href="/contact" className='block px-4 py-4'>Contact</a>
+                    <a href="/other" className='block px-4 py-4'>Other</a>
+                </nav>
+            </div>
+
+
+
+
+
+
+            <div class="flex-1 p-10 text-2xl font-bold">
+                content
+            </div>
+
+        </div >
     )
 }
