@@ -10,7 +10,7 @@ module.exports = {
     }),
     extend: {
       spacing: {
-        '96': '50rem',
+        '96': '55rem',
       }
     },
     fontFamily: {

@@ -40,9 +40,9 @@ export default function Header() {
                 </button >
             </div >
 
-            <div className=" bg-white border-r border-black mobile-sidebar text-black w-20 space-y-1 py-1 px-1 absolute inset-y-0 left-0 transform -translate-x-full md:hidden transition duration-200 ease-in-out">
+            <div className=" mobile-sidebar text-black w-20 space-y-1 py-1 px-1 absolute inset-y-0 left-0 transform -translate-x-full md:hidden transition duration-200 ease-in-out">
                 <nav>
-                    <a href="/" className='border-b border- px-1 py-1'>Home</a>
+                    <a href="/" className='border-b block py-1'>Home</a>
                     <a href="/about" className='border-b  block px-1 py-1'>About</a>
                     <a href="/contact" className='border-b  block px-1 py-1'>Contact</a>
                     <a href="/other" className='border-b  block px-1 py-1'>Other</a>
