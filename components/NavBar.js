@@ -16,7 +16,7 @@ export default function Navbar() {
 
     const router = useRouter()
     return (
-        <nav className="mainNav flex justify-center w-screen h-auto text-5xl hidden lg:block">
+        <nav className="mainNav flex justify-center w-screen h-auto text-5xl hidden xl:block">
             <div className="py-2.5 w-11/12 flex justify-center">
 
                 <div className=" h-auto font-sans flex justify-justify-start">
