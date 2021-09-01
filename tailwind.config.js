@@ -6,11 +6,15 @@ module.exports = {
   theme: {
     backgroundColor: theme => ({
       ...theme('colors'),
-      'primary': '#F5F5F5',
+      'primary': '#161616',
+      'navItem': '#c0a062',
     }),
     extend: {
       spacing: {
         '96': '55rem',
+      },
+      lineHeight: {
+        'extra-loose': '3.5rem',
       }
     },
     fontFamily: {
@@ -23,7 +27,9 @@ module.exports = {
     colors: {
       gray: colors.trueGray,
       black: colors.black,
-      white: colors.white
+      white: colors.white,
+      navText: '#161616',
+      default: '#999'
     },
   },
 
