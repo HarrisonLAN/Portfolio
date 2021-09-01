@@ -17,7 +17,7 @@ export default function Header() {
         });
     }, [])
     return (
-        <div className="relative min-h-auto xl:flex">
+        <div className="relative min-h-auto xl:flex z-30">
 
             <div className="text-black space-y-2 px-2 xl:hidden flex justify-start">
                 <button className="mobile-menu-button p4">

@@ -2,8 +2,8 @@ export default function Footer() {
     return (
 
         <footer>
-            <div className="py-16 flex flex-col justify-center items-center">
-                memes
+            <div className="fixed bottom-0">
+                
             </div>
         </footer>
     )

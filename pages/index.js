@@ -21,6 +21,20 @@ export default function Home() {
 
         </div>
       </div>
+      <div className="w-full h-audo m-auto xl:hidden">
+        <div className="relative h-80">
+          <div className="w-3/5 z-10 absolute top-8 left-1 pl-4 pt-4">
+            <h1>
+              Robert Harrison, a software engineer based in UK.
+            </h1>
+          </div>
+          <div className="z-0 absolute top-0 right-1 pr-4 pt-4 " >
+            <Image src="/background.png" alt="me" width="300" height="300" className=" object-contain" />
+          </div>
+
+        </div>
+      </div>
+
 
       <div className="w-9/12 m-auto">
         <h2 className="text-5xl"> Projects </h2>
@@ -42,6 +56,8 @@ export default function Home() {
       </div>
 
       <ContactForm />
+      <Footer />
+
     </body>
 
 
