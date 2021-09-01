@@ -6,13 +6,13 @@ import ContactForm from '../components/ContactForm'
 
 export default function Home() {
   return (
-    <body className="bg-primary">
+    <div className="bg-primary">
       <Navbar />
       <div className="w-9/12 h-screen m-auto hidden xl:block">
         <div className="relative h-full">
           <div className="w-3/5 z-10 absolute top-0 left-10 pl-24 pt-64 text-7xl">
             <h1>
-              I’m Robert dwaoinadw, a software engineer based in UK. Available for freelance & collaborations.
+              I’m Robert Harrison, a software engineer based in UK. Available for freelance & collaborations.
             </h1>
           </div>
           <div className="z-0 absolute top-0 right-10 pr-24 pt-16 " >
@@ -58,7 +58,7 @@ export default function Home() {
       <ContactForm />
       <Footer />
 
-    </body>
+    </div>
 
 
   )
