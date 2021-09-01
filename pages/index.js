@@ -9,17 +9,17 @@ import { useEffect } from 'react'
 export default function Home() {
   useEffect(() => {
     anime({
-      targets: '.square',
-      translateX: 250,
+      targets: '.circle',
+
     })
   });
 
 
 
   return (
-    <div className="leading-7 text-default bg-primary text-sm">
+    <div className="leading-7 text-default bg-primary text-sm h-screen">
       <Navbar />
-      <div className="square bg-black w-8 h-8">
+      <div className="circle fixed left-1/2 bottom-1/2 bg-navItem w-8 h-8 rounded-full">
       </div>
       <Footer />
 

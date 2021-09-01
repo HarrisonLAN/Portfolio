@@ -29,7 +29,9 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       navText: '#161616',
-      default: '#999'
+      default: '#999',
+      mobileNav: '#eee',
+      borderColour: '#0d0d0d'
     },
   },
 
