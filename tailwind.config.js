@@ -32,7 +32,8 @@ module.exports = {
       navText: '#161616',
       default: '#999',
       mobileNav: '#eee',
-      borderColour: '#0d0d0d'
+      borderColour: '#0d0d0d',
+      socialBorder: '#949494'
     },
   },
 
