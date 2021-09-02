@@ -1,5 +1,5 @@
 import 'tailwindcss/tailwind.css'
-import '../css/globalStyles.css'
+import '../css/globalStyles.scss'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
