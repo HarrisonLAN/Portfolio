@@ -8,6 +8,7 @@ module.exports = {
       ...theme('colors'),
       'primary': '#161616',
       'navItem': '#c0a062',
+      'lightNavItem': '#d6b87e'
     }),
     extend: {
       spacing: {
