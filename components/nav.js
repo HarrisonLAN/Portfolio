@@ -2,12 +2,22 @@ import { useRouter } from 'next/router'
 import React, { useEffect } from "react";
 import Navbar from './NavBar';
 import Link from 'next/link'
+import anime from 'animejs';
 export default function Header() {
   const path = useRouter();
+  useEffect(() => {
+    anime({
+      targets: '.rhNav',
+      translateX: 250,
+      duration: 2000,
+      direction: 'reverse',
+      opacity: 0.6
+    });
+  });
 
   return (
     <div>
-      <Link href="/"><a className="block w-14 h-14 bg-navItem text-navText text-lg text-center font-bold absolute top-0 left-0 leading-extra-loose">RH</a></Link>
+      <Link href="/"><a className="rhNav block w-14 h-14 bg-navItem text-navText text-lg text-center font-bold absolute top-0 left-0 leading-extra-loose">RH</a></Link>
       <nav className="mobileNav fixed bottom-0 left-0 w-screen">
         <ul className="mobileNav_list flex">
           <li className="mobileNav__item flex-1 text-center border-r-2 border-borderColour">

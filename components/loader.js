@@ -2,7 +2,7 @@ import React, { useState, useEffect, componentDidMount } from 'react';
 export default function Loader() {
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        setLoading(false)
+        setTimeout(function(){ setLoading(false); }, 2000);
     }, [])
     if(loading){
         return (

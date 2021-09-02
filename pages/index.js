@@ -9,16 +9,6 @@ import Link from 'next/link'
 
 
 export default function Home() {
-  useEffect(() => {
-    anime({
-      targets: '.dir-normal',
-      translateX: 250,
-      easing: 'easeInOutSine'
-
-    })
-  });
-
-
 
   return (
     <div className="leading-7 text-default bg-primary text-sm h-screen">
