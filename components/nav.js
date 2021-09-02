@@ -10,6 +10,7 @@ export default function Header() {
       targets: '.rhNav',
       translateX: 250,
       duration: 2000,
+      easing: 'easeInOutExpo',
       direction: 'reverse',
       opacity: 0.6
     });
