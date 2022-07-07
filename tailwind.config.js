@@ -33,7 +33,8 @@ module.exports = {
       default: '#999',
       mobileNav: '#eee',
       borderColour: '#0d0d0d',
-      socialBorder: '#949494'
+      socialBorder: '#949494',
+      navColour: '#c0a062'
     },
   },
 

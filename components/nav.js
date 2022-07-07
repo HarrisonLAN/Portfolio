@@ -15,11 +15,22 @@ export default function Header() {
       opacity: 0.6
     });
   });
+  useEffect(() => {
+    anime({
+      targets: '.mainContent4',
+      translateX: 250,
+      duration: 2000,
+      easing: 'easeInOutExpo',
+      direction: 'reverse',
+      opacity: 0.6
+    });
+  });
 
   return (
-    <div>
+    <div className='topNav'>
       <Link href="/"><a className="rhNav block w-14 h-14 bg-navItem text-navText text-lg text-center font-bold absolute top-0 left-0 leading-extra-loose">RH</a></Link>
-      <nav className="mobileNav fixed bottom-0 left-0 w-screen">
+      <div className="mainContent4 pl-14 hidden md:flex w-full h-14 items-center justify-center font-black text-4xl text-white">Robert Harrison Aspiring Developer Based In UK</div>
+      <nav className="mobileNav fixed bottom-0 left-0 w-screen md:hidden">
         <ul className="mobileNav_list flex">
           <li className="mobileNav__item flex-1 text-center border-r-2 border-borderColour">
             <Link href="/">
